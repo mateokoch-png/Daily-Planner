@@ -120,7 +120,6 @@ function showView(name) {
 // ── Home Render ───────────────────────────────────────────────────────────────
 
 function renderHome() {
-  el('header-greeting').textContent = greeting();
   el('header-date').textContent = todayLabel();
   renderExamStrip();
   renderNudges();
