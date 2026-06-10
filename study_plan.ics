@@ -1,0 +1,366 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Mateo Planner//Exam Sprint 2026//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:📚 Exam Sprint Jun-Jul 2026
+X-WR-TIMEZONE:Europe/Amsterdam
+BEGIN:VTIMEZONE
+TZID:Europe/Amsterdam
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:mateo-study-001@planner
+DTSTART;TZID=Europe/Amsterdam:20260611T200000
+DTEND;TZID=Europe/Amsterdam:20260611T230000
+SUMMARY:📖 Linear Algebra Ch4 — finish tonight
+DESCRIPTION:Hard deadline. Get it done before bed.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-002@planner
+DTSTART;TZID=Europe/Amsterdam:20260612T130000
+DTEND;TZID=Europe/Amsterdam:20260612T160000
+SUMMARY:📖 DPB: topic overview — map weak spots
+DESCRIPTION:Read through all topics. Flag everything you don't immediately understand. Focus on FBD and force diagrams.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-003@planner
+DTSTART;TZID=Europe/Amsterdam:20260614T160000
+DTEND;TZID=Europe/Amsterdam:20260614T200000
+SUMMARY:📖 RTS: first pass — all definitions & concepts
+DESCRIPTION:Mom leaves at 16:00. Use the evening. Read every definition. Write them down once.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-004@planner
+DTSTART;TZID=Europe/Amsterdam:20260615T190000
+DTEND;TZID=Europe/Amsterdam:20260615T210000
+SUMMARY:📖 RTS: flashcards round 1
+DESCRIPTION:After classes. Go through definitions again. Cover and recall. Flag the ones that don't stick.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-005@planner
+DTSTART;TZID=Europe/Amsterdam:20260616T090000
+DTEND;TZID=Europe/Amsterdam:20260616T103000
+SUMMARY:📖 RTS: past exam Q1-2
+DESCRIPTION:Before Sunken Robotics meeting. Do the first two questions of a past exam cold.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-006@planner
+DTSTART;TZID=Europe/Amsterdam:20260616T140000
+DTEND;TZID=Europe/Amsterdam:20260616T170000
+SUMMARY:📖 DPB: FBD exercises session 1
+DESCRIPTION:After meeting. Exercises only — no reading. Draw every free body diagram from scratch.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-007@planner
+DTSTART;TZID=Europe/Amsterdam:20260617T090000
+DTEND;TZID=Europe/Amsterdam:20260617T120000
+SUMMARY:📖 DPB: FBD exercises session 2
+DESCRIPTION:Morning block. Continue exercises. Focus on the formula application that tripped you up last time.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-001@planner
+DTSTART;TZID=Europe/Amsterdam:20260617T120000
+DTEND;TZID=Europe/Amsterdam:20260617T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-008@planner
+DTSTART;TZID=Europe/Amsterdam:20260617T190000
+DTEND;TZID=Europe/Amsterdam:20260617T210000
+SUMMARY:📖 RTS: evening review
+DESCRIPTION:After classes. Quick definitions run-through. 20 min max per topic.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-009@planner
+DTSTART;TZID=Europe/Amsterdam:20260618T140000
+DTEND;TZID=Europe/Amsterdam:20260618T170000
+SUMMARY:📖 RTS: code snippets + definitions round 2
+DESCRIPTION:After drone defense. Go through all code snippets. What does each do? What are edge cases?
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-010@planner
+DTSTART;TZID=Europe/Amsterdam:20260619T090000
+DTEND;TZID=Europe/Amsterdam:20260619T120000
+SUMMARY:📖 RTS: full past exam — timed
+DESCRIPTION:Exam conditions. No notes. Time yourself. Grade it after.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-002@planner
+DTSTART;TZID=Europe/Amsterdam:20260619T120000
+DTEND;TZID=Europe/Amsterdam:20260619T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-011@planner
+DTSTART;TZID=Europe/Amsterdam:20260620T130000
+DTEND;TZID=Europe/Amsterdam:20260620T170000
+SUMMARY:📖 DPB: full exercise set + weak spots
+DESCRIPTION:After morning class. Every exercise type. Don't skip the ones that feel hard.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-012@planner
+DTSTART;TZID=Europe/Amsterdam:20260621T090000
+DTEND;TZID=Europe/Amsterdam:20260621T120000
+SUMMARY:📖 RTS: final review — all definitions + past paper
+DESCRIPTION:Last RTS session. Go through every definition one more time. Do another past paper.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-003@planner
+DTSTART;TZID=Europe/Amsterdam:20260621T120000
+DTEND;TZID=Europe/Amsterdam:20260621T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-013@planner
+DTSTART;TZID=Europe/Amsterdam:20260621T140000
+DTEND;TZID=Europe/Amsterdam:20260621T170000
+SUMMARY:📖 DPB: past exam timed — exam conditions
+DESCRIPTION:Simulate the real exam. 14:00 start, same as the real one. No notes. Grade after.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-exam-rts@planner
+DTSTART;TZID=Europe/Amsterdam:20260622T080000
+DTEND;TZID=Europe/Amsterdam:20260622T103000
+SUMMARY:📖 RTS: light review before exam
+DESCRIPTION:No new content. Just read through your notes calmly. Be at the room early.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:RTS exam in 30 minutes
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-exam-rts-actual@planner
+DTSTART;TZID=Europe/Amsterdam:20260622T113000
+DTEND;TZID=Europe/Amsterdam:20260622T130000
+SUMMARY:🎯 RTS EXAM
+DESCRIPTION:Real-Time Systems resit. Target: 7.0+. You know this.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:RTS EXAM in 1 hour
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:RTS EXAM tomorrow at 11:30
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-014@planner
+DTSTART;TZID=Europe/Amsterdam:20260622T143000
+DTEND;TZID=Europe/Amsterdam:20260622T170000
+SUMMARY:📖 DPB: hard reset — weakest exercises
+DESCRIPTION:Straight after RTS. Shake it off and get into DPB. Do the exercises that felt worst.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-015@planner
+DTSTART;TZID=Europe/Amsterdam:20260623T090000
+DTEND;TZID=Europe/Amsterdam:20260623T120000
+SUMMARY:📖 DPB: exercises — weakest topics
+DESCRIPTION:Morning. Hit your weakest areas hard.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-004@planner
+DTSTART;TZID=Europe/Amsterdam:20260623T120000
+DTEND;TZID=Europe/Amsterdam:20260623T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-016@planner
+DTSTART;TZID=Europe/Amsterdam:20260623T140000
+DTEND;TZID=Europe/Amsterdam:20260623T170000
+SUMMARY:📖 DPB: past paper timed
+DESCRIPTION:Exam conditions. 14:00 start, same as tomorrow. Grade it.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-017@planner
+DTSTART;TZID=Europe/Amsterdam:20260624T080000
+DTEND;TZID=Europe/Amsterdam:20260624T120000
+SUMMARY:📖 DPB: light review — formulas only
+DESCRIPTION:No new exercises. Just confirm your formulas and method for each problem type.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:DPB exam in 6 hours — light review time
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-exam-dpb@planner
+DTSTART;TZID=Europe/Amsterdam:20260624T140000
+DTEND;TZID=Europe/Amsterdam:20260624T160000
+SUMMARY:🎯 DPB EXAM
+DESCRIPTION:Dynamics & Particle Biomechanics resit. Target: 7.0+. Draw every FBD before solving.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:DPB EXAM in 1 hour
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:DPB EXAM tomorrow at 14:00
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-018@planner
+DTSTART;TZID=Europe/Amsterdam:20260625T090000
+DTEND;TZID=Europe/Amsterdam:20260625T120000
+SUMMARY:📖 DFC: content overview — map key topics
+DESCRIPTION:First DFC session. What's on the exam? What do you know vs what needs work?
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-005@planner
+DTSTART;TZID=Europe/Amsterdam:20260625T120000
+DTEND;TZID=Europe/Amsterdam:20260625T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-019@planner
+DTSTART;TZID=Europe/Amsterdam:20260625T140000
+DTEND;TZID=Europe/Amsterdam:20260625T170000
+SUMMARY:📖 EDS: concept map + past paper structure
+DESCRIPTION:What topics come up most in past papers? Build a hit list.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-020@planner
+DTSTART;TZID=Europe/Amsterdam:20260626T090000
+DTEND;TZID=Europe/Amsterdam:20260626T120000
+SUMMARY:📖 EDS: past paper 1 — understand every answer
+DESCRIPTION:Don't just do it — understand why each answer is correct. Mark every gap.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-021@planner
+DTSTART;TZID=Europe/Amsterdam:20260626T140000
+DTEND;TZID=Europe/Amsterdam:20260626T170000
+SUMMARY:📖 DFC: past paper timed
+DESCRIPTION:Full past paper under exam conditions.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-022@planner
+DTSTART;TZID=Europe/Amsterdam:20260627T090000
+DTEND;TZID=Europe/Amsterdam:20260627T120000
+SUMMARY:📖 DFC: weak spots + formula review
+DESCRIPTION:What did you get wrong in the past paper? Fix those gaps.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-006@planner
+DTSTART;TZID=Europe/Amsterdam:20260627T120000
+DTEND;TZID=Europe/Amsterdam:20260627T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-023@planner
+DTSTART;TZID=Europe/Amsterdam:20260627T140000
+DTEND;TZID=Europe/Amsterdam:20260627T170000
+SUMMARY:📖 EDS: past paper 2
+DESCRIPTION:Second past paper. Timed.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-024@planner
+DTSTART;TZID=Europe/Amsterdam:20260628T090000
+DTEND;TZID=Europe/Amsterdam:20260628T120000
+SUMMARY:📖 DFC: final full review
+DESCRIPTION:Last DFC session. Read through everything once. Make sure formulas are locked in.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-007@planner
+DTSTART;TZID=Europe/Amsterdam:20260628T120000
+DTEND;TZID=Europe/Amsterdam:20260628T133000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-025@planner
+DTSTART;TZID=Europe/Amsterdam:20260628T140000
+DTEND;TZID=Europe/Amsterdam:20260628T170000
+SUMMARY:📖 EDS: past paper 3 + concept gaps
+DESCRIPTION:Third past paper. After grading, go back and close every gap you found.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-exam-dfc@planner
+DTSTART;TZID=Europe/Amsterdam:20260629T113000
+DTEND;TZID=Europe/Amsterdam:20260629T130000
+SUMMARY:🎯 DFC EXAM
+DESCRIPTION:Right after your presentation. Stay focused. You know this material.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:DFC EXAM in 1 hour
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:DFC EXAM tomorrow at 11:30 — and presentation at 09:00
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-026@planner
+DTSTART;TZID=Europe/Amsterdam:20260629T140000
+DTEND;TZID=Europe/Amsterdam:20260629T170000
+SUMMARY:📖 EDS: final review — no new content
+DESCRIPTION:After DFC exam. Don't learn anything new. Just go over what you know.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-gym-008@planner
+DTSTART;TZID=Europe/Amsterdam:20260630T090000
+DTEND;TZID=Europe/Amsterdam:20260630T103000
+SUMMARY:🏋️ Gym
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-027@planner
+DTSTART;TZID=Europe/Amsterdam:20260630T110000
+DTEND;TZID=Europe/Amsterdam:20260630T140000
+SUMMARY:📖 EDS: full past paper timed
+DESCRIPTION:Last full paper. Exam conditions. Grade it. Fix only what you got wrong.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-028@planner
+DTSTART;TZID=Europe/Amsterdam:20260630T150000
+DTEND;TZID=Europe/Amsterdam:20260630T170000
+SUMMARY:📖 EDS: weak spots only
+DESCRIPTION:Whatever you got wrong this morning. That's it. Then stop and rest.
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-study-029@planner
+DTSTART;TZID=Europe/Amsterdam:20260701T080000
+DTEND;TZID=Europe/Amsterdam:20260701T110000
+SUMMARY:📖 EDS: light review — exam morning
+DESCRIPTION:Calm read-through. No exercises. Eat a good breakfast. Be at the room early.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:EDS exam in 3 hours — stay calm
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mateo-exam-eds@planner
+DTSTART;TZID=Europe/Amsterdam:20260701T140000
+DTEND;TZID=Europe/Amsterdam:20260701T160000
+SUMMARY:🎯 EDS EXAM 🎉
+DESCRIPTION:Last one. You made it through the sprint. Go get it.
+BEGIN:VALARM
+TRIGGER:-PT60M
+ACTION:DISPLAY
+DESCRIPTION:EDS EXAM in 1 hour — last one!
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:EDS EXAM tomorrow at 14:00 — final exam of the sprint
+END:VALARM
+END:VEVENT
+END:VCALENDAR
