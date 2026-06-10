@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#F7F6F2">
+  <title>Mateo's Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════
+       VIEW: HOME
+  ════════════════════════════════════════════ -->
+  <div id="view-home" class="view">
+
+    <header class="header">
+      <div id="header-date" class="header-date"></div>
+      <div id="header-greeting" class="header-greeting"></div>
+    </header>
+
+    <!-- Exam countdown strip -->
+    <section class="section">
+      <div class="section-label">Exams</div>
+      <div id="exam-strip" class="exam-strip"></div>
+    </section>
+
+    <!-- Follow-up nudges -->
+    <section id="nudge-section" class="section hidden">
+      <div class="section-label">Follow-ups</div>
+      <div id="nudge-list"></div>
+    </section>
+
+    <!-- Today's 3 tasks -->
+    <section class="section">
+      <div class="section-row">
+        <div class="section-label">Today</div>
+        <button class="btn-link" id="edit-today-btn">Edit</button>
+      </div>
+      <div id="today-list"></div>
+    </section>
+
+    <!-- Project blocks -->
+    <section class="section">
+      <div class="section-label">Projects</div>
+      <div id="project-grid"></div>
+    </section>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       VIEW: PROJECT DETAIL
+  ════════════════════════════════════════════ -->
+  <div id="view-project" class="view">
+
+    <header class="project-header">
+      <button class="back-btn" id="back-btn" aria-label="Back">←</button>
+      <div id="project-title" class="header-project-name"></div>
+      <button class="add-task-fab" id="add-task-btn" aria-label="Add task">+</button>
+    </header>
+
+    <div id="project-tasks-container"></div>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       VIEW: EXAM MANAGEMENT
+  ════════════════════════════════════════════ -->
+  <div id="view-exams" class="view">
+
+    <header class="exam-view-header">
+      <div class="header-date">Countdown</div>
+      <div class="exam-view-title">📅 Exams</div>
+    </header>
+
+    <div class="exam-add-form">
+      <div class="form-group" style="margin-bottom:0">
+        <label class="form-label">Exam name</label>
+        <input id="exam-name-input" class="form-input" type="text" placeholder="e.g. Dynamics & Control" autocomplete="off">
+      </div>
+      <div class="exam-add-form-row">
+        <div>
+          <label class="form-label">Date</label>
+          <input id="exam-date-input" class="form-input" type="date">
+        </div>
+        <div style="align-self:flex-end">
+          <button class="exam-add-btn" id="exam-add-btn">Add exam</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="exam-manage-list" class="exam-manage-list"></div>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MODAL: ADD / EDIT TASK
+  ════════════════════════════════════════════ -->
+  <div id="modal-task" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-sheet">
+      <div class="modal-handle"></div>
+      <h2 class="modal-title" id="modal-title-text">New Task</h2>
+
+      <div class="form-group">
+        <label class="form-label">Task</label>
+        <input id="task-title-input" class="form-input" type="text" placeholder="What needs to be done?" autocomplete="off">
+      </div>
+
+      <div class="form-row">
+        <div class="form-half">
+          <label class="form-label">Due date</label>
+          <input id="task-date-input" class="form-input" type="date">
+        </div>
+        <div class="form-half">
+          <label class="form-label">Priority</label>
+          <select id="task-priority-input" class="form-input">
+            <option value="high">High</option>
+            <option value="medium" selected>Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top:4px">
+        <label class="form-label">Follow-up reminder</label>
+        <div class="form-row" style="align-items:center;gap:10px">
+          <input id="task-followup-days" class="form-input" type="number" placeholder="3" min="1" max="90" style="width:80px;flex:0 0 auto">
+          <span class="form-unit">days after completing</span>
+        </div>
+        <input id="task-followup-note" class="form-input" type="text" placeholder="e.g. Check if they replied" autocomplete="off" style="margin-top:8px">
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-secondary" id="task-cancel-btn">Cancel</button>
+        <button class="btn-secondary" id="task-delete-btn" style="background:#FEE2E2;color:#DC2626">Delete</button>
+        <button class="btn-primary" id="task-save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       MODAL: TODAY PICKER
+  ════════════════════════════════════════════ -->
+  <div id="modal-today" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-sheet">
+      <div class="modal-handle"></div>
+      <h2 class="modal-title">Today's focus</h2>
+      <p class="modal-subtitle">Pick up to 3 tasks — <span id="today-count">0</span>/3 selected</p>
+      <div id="today-picker-list"></div>
+      <div class="modal-actions">
+        <button class="btn-secondary" id="today-cancel-btn">Cancel</button>
+        <button class="btn-primary" id="today-save-btn">Lock in</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════
+       BOTTOM NAV
+  ════════════════════════════════════════════ -->
+  <nav class="bottom-nav" role="navigation">
+    <button class="nav-btn" id="nav-home">
+      <span class="nav-icon">⊞</span>
+      <span class="nav-label">Home</span>
+    </button>
+    <button class="nav-btn" id="nav-exams">
+      <span class="nav-icon">📅</span>
+      <span class="nav-label">Exams</span>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
