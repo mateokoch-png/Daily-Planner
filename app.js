@@ -79,41 +79,10 @@ const DEFAULT_TASKS = [
 ];
 
 const STUDY_TASKS = [
-  // Linear Algebra
-  { projectId: 'university', title: 'Linear Algebra Ch4 — finish tonight', dueDate: '2026-06-12', priority: 'high' },
-  // RTS milestones
-  { projectId: 'university', title: 'RTS: first pass all definitions & concepts', dueDate: '2026-06-14', priority: 'high' },
-  { projectId: 'university', title: 'RTS: flashcards round 1 done', dueDate: '2026-06-15', priority: 'high' },
-  { projectId: 'university', title: 'RTS: past exam Q1-2 done', dueDate: '2026-06-16', priority: 'high' },
-  { projectId: 'university', title: 'RTS: code snippets & definitions round 2', dueDate: '2026-06-18', priority: 'high' },
-  { projectId: 'university', title: 'RTS: full past exam timed', dueDate: '2026-06-19', priority: 'high' },
-  { projectId: 'university', title: 'RTS: final review + past paper', dueDate: '2026-06-21', priority: 'high' },
   { projectId: 'university', title: '🎯 RTS EXAM — 11:30', dueDate: '2026-06-22', priority: 'high' },
-  // DPB milestones
-  { projectId: 'university', title: 'DPB: topic overview — map weak spots', dueDate: '2026-06-12', priority: 'high' },
-  { projectId: 'university', title: 'DPB: FBD exercises session 1', dueDate: '2026-06-16', priority: 'high' },
-  { projectId: 'university', title: 'DPB: FBD exercises session 2', dueDate: '2026-06-17', priority: 'high' },
-  { projectId: 'university', title: 'DPB: full exercise set + weak spots', dueDate: '2026-06-20', priority: 'high' },
-  { projectId: 'university', title: 'DPB: past exam timed under exam conditions', dueDate: '2026-06-21', priority: 'high' },
-  { projectId: 'university', title: 'DPB: hard reset exercises after RTS exam', dueDate: '2026-06-22', priority: 'high' },
-  { projectId: 'university', title: 'DPB: final light review', dueDate: '2026-06-24', priority: 'high' },
   { projectId: 'university', title: '🎯 DPB EXAM — 14:00', dueDate: '2026-06-24', priority: 'high' },
-  // DFC milestones
-  { projectId: 'university', title: 'DFC: content overview + identify key topics', dueDate: '2026-06-25', priority: 'medium' },
-  { projectId: 'university', title: 'DFC: past paper timed', dueDate: '2026-06-26', priority: 'medium' },
-  { projectId: 'university', title: 'DFC: weak spots + formula review', dueDate: '2026-06-27', priority: 'medium' },
-  { projectId: 'university', title: 'DFC: final full review', dueDate: '2026-06-28', priority: 'medium' },
   { projectId: 'university', title: '🎯 DFC EXAM — 11:30', dueDate: '2026-06-29', priority: 'high' },
-  // EDS milestones
-  { projectId: 'university', title: 'EDS: concept map + past paper structure', dueDate: '2026-06-25', priority: 'high' },
-  { projectId: 'university', title: 'EDS: past paper 1 — understand every answer', dueDate: '2026-06-26', priority: 'high' },
-  { projectId: 'university', title: 'EDS: past paper 2', dueDate: '2026-06-27', priority: 'high' },
-  { projectId: 'university', title: 'EDS: past paper 3 + concept gaps', dueDate: '2026-06-28', priority: 'high' },
-  { projectId: 'university', title: 'EDS: final review (no new content)', dueDate: '2026-06-29', priority: 'high' },
-  { projectId: 'university', title: 'EDS: full past paper timed', dueDate: '2026-06-30', priority: 'high' },
   { projectId: 'university', title: '🎯 EDS EXAM — 14:00', dueDate: '2026-07-01', priority: 'high' },
-  // Exams module entries
-  { projectId: 'university', title: 'Add exams to countdown: RTS 22 Jun, DPB 24 Jun, DFC 29 Jun, EDS 1 Jul', dueDate: '2026-06-11', priority: 'medium' },
 ];
 
 function initState() {
